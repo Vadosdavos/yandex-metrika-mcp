@@ -1,0 +1,24 @@
+{
+  "name": "yandex-metrika-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the Yandex Metrika",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node ./build/index.js",
+    "build": "tsc && node ./build/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector node ./build/index.js",
+    "client": "tsc && node ./build/client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "typescript": "^5.8.3"
+  }
+}
