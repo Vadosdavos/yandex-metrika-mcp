@@ -10,11 +10,8 @@ import { withErrorHandling } from "./lib/index.js";
 const token = process.env.YANDEX_API_KEY;
 
 if (!token) {
-  console.error('❌ Error: Missing Yandex Metrika token.');
+  console.error('❌ Error: Missing Yandex Metrika token (OK for local build).');
   process.exit(1);
-} else {
-  console.log('token', token);
-  console.error('✅ Parsed token.');
 }
 
 const client = new YandexMetrikaClient(token);

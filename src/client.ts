@@ -13,10 +13,6 @@ export class YandexMetrikaClient {
   private config: Required<ClientConfig>;
 
   constructor(token: string, config: ClientConfig = {}) {
-    if (!token) {
-      throw new Error('Yandex Metrika token is required');
-    }
-
     this.token = token;
     this.config = {
       timeout: config.timeout || 30000,
