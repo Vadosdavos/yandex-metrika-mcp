@@ -8,9 +8,9 @@
     "build": "tsc && node ./build/index.js",
     "inspector": "npx @modelcontextprotocol/inspector node ./build/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["yandex", "metrika", "mcp", "server"],
+  "author": "Vadim Bezymiannyi",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.16.0",
     "zod": "^3.25.76"
